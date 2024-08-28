@@ -1,1 +1,1 @@
-This is a Simple Shell Project that mimics the Simple Thomson's Shell. 
+This is a Simple Shell Project in C programming that mimics the Simple Thompson's Shell. 
