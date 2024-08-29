@@ -24,7 +24,7 @@ int is_chain(info_t *info, char *buf, size_t *p)
 		j++;
 		info->cmd_buf_type = CMD_AND;
 	}
-	else if (buf[j] == ';')
+	else if (buf[j] == ';') 
 	{
 		buf[j] = 0;
 		info->cmd_buf_type = CMD_CHAIN;
@@ -107,7 +107,7 @@ int replace_alias(info_t *info)
 int replace_vars(info_t *info)
 {
 	int i = 0;
-	list_t *node;
+	list_t *node; 
 
 	for (i = 0; info->argv[i]; i++)
 	{
@@ -127,7 +127,7 @@ int replace_vars(info_t *info)
 			continue;
 		}
 		node = node_starter(info->env, &info->argv[i][1], '=');
-		if (node)
+		if (node) 
 		{
 			replace_string(&(info->argv[i]),
 				_strdup(_strchr(node->str, '=') + 1));
