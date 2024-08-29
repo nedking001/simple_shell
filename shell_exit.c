@@ -52,7 +52,7 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 		j++;
 	}
-	if (j < n)
+	if (j < n)   
 		dest[i] = '\0';
 	return (s);
 }
@@ -68,7 +68,7 @@ char *_strchr(char *s, char c)
 	do {
 		if (*s == c)
 			return (s);
-	} while (*s++ != '\0');
+	} while (*s++ != '\0'); 
 
 	return (NULL);
 }
