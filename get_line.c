@@ -72,7 +72,7 @@ ssize_t get_input(info_t *info)
 			if (is_chain(info, buf, &j))
 				break;
 			j++;
-		}
+		}  
 
 		i = j + 1; /* increment past nulled ';'' */
 		if (i >= len) /* reached end of buffer? */
@@ -125,7 +125,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	ssize_t r = 0, s = 0;
 	char *p = NULL, *new_p = NULL, *c;
 
-	p = *ptr;
+	p = *ptr; 
 	if (p && length)
 		s = *length;
 	if (i == len)
@@ -152,7 +152,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 
 	if (length)
 		*length = s;
-	*ptr = p;
+	*ptr = p;  
 	return (s);
 }
 
